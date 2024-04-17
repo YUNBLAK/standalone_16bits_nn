@@ -21,6 +21,7 @@ import MODELS.AlexNet as AlexNet
 import MODELS.VGG16 as VGG16
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 import logging
+import VIT as vit
 import MODELS.NEW_RESNET as NR
 from tensorflow.keras.applications.densenet import DenseNet121
 from tensorflow.keras.applications.densenet import DenseNet169
@@ -243,7 +244,11 @@ if __name__ == '__main__':
     parser.add_argument("-rn", "--resNum", type=int)
 
     args = parser.parse_args()
-    TestOn(args.modelType, args.precision, args.learningRate, args.batchSize, 1e-4, True, (args.randomSeeds if None != args.randomSeeds else random.random(0, 100)), (args.resNum if args.modelType == 'res' else 0))
+
+    if args.modelType == "vit":
+        vit.tester(args.precision, args.learningRate, args.batchSize,  (args.resNum if args.modelType == 'res' else 0), (args.randomSeeds if None != args.randomSeeds else random.random(0, 100)))
+    else:
+        TestOn(args.modelType, args.precision, args.learningRate, args.batchSize, 1e-4, True, (args.randomSeeds if None != args.randomSeeds else random.random(0, 100)), (args.resNum if args.modelType == 'res' else 0))
     
 
     
