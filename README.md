@@ -30,10 +30,12 @@ Please replace run commands with below information.
     res -> ResNet
     mob -> MobileNetV2
     dense -> DenseNet
+    vit -> Vision Transformer
 
 ### Layer Numbers for CNN Architectures [Number of Layers]:
     32, 56, 110, 156 for ResNet
     121, 169 for DenseNet
+    8, 12, 16 for Vision Transformer (VIT)
     
 ## Docker
 
