@@ -1,10 +1,15 @@
-# standalone_16bits_nn
+# Standalone 16-bit: Missing Study for Hardware-Constrained Neural Networks
 Standalone 16-bits Neural Networks
 
-### Docker Commands
-Requirements:
 
 
+## Dependencies:
+
+
+Used CUDA Version: 
+
+    
+## Docker
 
 ### Docker Commands:   
 Build
