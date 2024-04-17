@@ -13,4 +13,4 @@ Build
 
 Run
 
-    docker run -p 3000:3000
+    docker run -p 3000:3000 nn16 res float16 0.01 256 -rs 777 -rn 56
