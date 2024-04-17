@@ -12,7 +12,7 @@ Co-Author: Juyoung Yun, Sol Choi, Francois Rameau, Byungkon Kang
 Neural Networks, Low-precision, Half-precision
 
 ## Dependencies
-Please check requirements.txt
+Please check requirements.txt   
 ** Used CUDA Version: 12.2
 
 ## Testing
