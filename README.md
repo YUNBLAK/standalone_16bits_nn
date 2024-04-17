@@ -4,8 +4,14 @@ Reducing the number of bits needed to encode the weights and activations of neur
 
 This study focuses on the widely accessible IEEE 16-bit format for comparative analysis. This analysis involves an in-depth theoretical investigation of the factors that lead to discrepancies between 16-bit and 32-bit models, including a formalization of the concepts of floating-point error and tolerance to understand the conditions under which a 16-bit model can approximate 32-bit results. Contrary to literature that credits the success of noise-tolerated neural networks to regularization effects, our study—supported by a series of rigorous experiments—provides a quantitative explanation of why standalone IEEE 16-bit floating-point neural networks can perform on par with  32-bit and mixed-precision networks in various image classification tasks. Because no prior research has studied  IEEE 16-bit as a standalone floating-point precision in neural networks,  we believe our findings will have significant impacts,  encouraging the adoption of standalone IEEE 16-bit networks in future neural network applications.
 
+## People
+Corresponding Author: Prof. Zhoulai Fu   
+Co-Author: Juyoung Yun, Sol Choi, Francois Rameau, Byungkon Kang
 
-## Dependencies:
+## Keyword
+Neural Networks, Low-precision, Half-precision
+
+## Dependencies
 Please check requirements.txt
 ** Used CUDA Version: 12.2
 
