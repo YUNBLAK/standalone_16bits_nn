@@ -16,7 +16,24 @@ Please check requirements.txt
 ** Used CUDA Version: 12.2
 
 ## Testing
+Please replace run commands with below information.
 
+### Precision Type for Code Testing [Precision Type]:
+    float16 -> Floating Point 16-bits
+    float32 -> Floating Point 32-bits
+    mixed_float16 -> Mixed Precision
+    bfloat16 -> Bfloat16
+
+### CNN Architecture [Model Name]:
+    alex -> AlexNet
+    vgg -> VGG16
+    res -> ResNet
+    mob -> MobileNetV2
+    dense -> DenseNet
+
+### Layer Numbers for CNN Architectures [Number of Layers]:
+    32, 56, 110, 156 for ResNet
+    121, 169 for DenseNet
     
 ## Docker
 
