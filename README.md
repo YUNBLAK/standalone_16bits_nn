@@ -7,6 +7,14 @@ Clone this repo to your local workspace:
 
     $ git clone https://github.com/YUNBLAK/standalone_16bits_nn.git
 
+This contains a Dockerfile that can be used to build our implementation. If an error about permission denied occurs, try to run docker in root sudo docker ....
+
+    $ sudi docker build -t nn16 .
+
+It may takes a few minutes for installing necessary packages and libraries including TensorFlow.
+
+## Usage
+
 ## Testing
 Please replace run commands with below information.
 
