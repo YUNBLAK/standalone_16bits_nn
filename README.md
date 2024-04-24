@@ -1,8 +1,11 @@
 # Standalone 16-bit: Missing Study for Hardware-Constrained Neural Networks
 
-## Dependencies
-Please check requirements.txt   
-** Used CUDA Version: 12.2
+## Setup
+Install [the docker](https://www.docker.com/). Here are some guides for [install docker for Ubuntu](https://docs.docker.com/engine/install/ubuntu/) and [docker for MacOS](https://docs.docker.com/desktop/install/mac-install/)
+
+Clone this repo to your local workspace:
+
+    $ git clone https://github.com/YUNBLAK/standalone_16bits_nn.git
 
 ## Testing
 Please replace run commands with below information.
