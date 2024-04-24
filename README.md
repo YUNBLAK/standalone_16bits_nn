@@ -1,6 +1,6 @@
 # Standalone 16-bit: Missing Study for Hardware-Constrained Neural Networks
 
-## Setup
+# Setup
 Install [the docker](https://www.docker.com/). Here are some guides for [install docker for Ubuntu](https://docs.docker.com/engine/install/ubuntu/) and [docker for MacOS](https://docs.docker.com/desktop/install/mac-install/)
 
 Clone this repo to your local workspace:
@@ -13,7 +13,7 @@ This contains a Dockerfile that can be used to build our implementation. If an e
 
 It may takes a few minutes for installing necessary packages and libraries including TensorFlow.
 
-## Usage
+# Usage
 
 ## Testing
 Please replace run commands with below information.
