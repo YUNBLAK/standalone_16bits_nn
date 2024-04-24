@@ -14,14 +14,25 @@ This contains a Dockerfile that can be used to build and test our implementation
 It may takes a few minutes for installing necessary packages and libraries including TensorFlow.
 
 # Usage
-## Run command type
+## Run command
 
     $ sudo docker run --gpus all -p 3000:3000 nn16 [Model Name] [Precision Type] [Learning Rate] [Batch Size] -rs [Random Seed] -rn [Number of Layers]
 
 ## Run Examples
 Some example convolutional neural networks in CNN_MAIN.py train CIFAR-10 and show results in our paper: Float16 is faster than both Mixed Precision and Float32.
 
-Run on examples CNN for IEEE Floating Point 16-bit:
+Run on example 16-bit ResNet-32:
+
+    $ sudo docker run --gpus all -p 3000:3000 nn16 res float16 0.01 256 -rs 777 -rn 32
+    # CNN model: ResNet 32
+    # Learning Rate: 0.01
+    # Batchsize: 256
+    # Random Seed: 777
+    # Precision Type: float16
+
+
+
+Below are some examples for commands:
 
 ResNet
 
