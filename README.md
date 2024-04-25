@@ -1,5 +1,7 @@
 # Standalone 16-bit: Missing Study for Hardware-Constrained Neural Networks
 
+The provided repository contains the necessary instructions and information to reproduce the findings of our study, "Standalone 16-bit Training: Missing Study for Hardware-Constrained Neural Networks".
+
 # Setup
 Please install [the docker](https://www.docker.com/). Here are some guidelines for [install docker for Ubuntu](https://docs.docker.com/engine/install/ubuntu/) and [docker for MacOS](https://docs.docker.com/desktop/install/mac-install/)
 
