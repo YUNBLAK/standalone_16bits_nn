@@ -71,6 +71,9 @@ Vision Transformer
 
     $ python reproduce.py
 
+
+Table 5 in our paper
+
 | Architectures (# par. million) | FP16 (Accuracy %) | FP32 (Accuracy %) | MP (Accuracy %) | FP16 (Time s) | FP32 (Time s) | MP (Time s) | Acc. Diff. FP16-FP32 | Acc. Diff. FP16-MP | Time Speedup FP32/FP16 | Time Speedup MP/FP16 |
 |--------------------------------|-------------------|-------------------|-----------------|---------------|---------------|-------------|----------------------|--------------------|------------------------|-----------------------|
 | AlexNet (2.09)                 | 76.0±0.3          | 75.8±0.3          | 75.9±0.3        | 96            | 174           | 150         | 0.2                  | 0.1                | 1.8x                   | 1.5x                  |
