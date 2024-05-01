@@ -68,3 +68,5 @@ Vision Transformer
     
 
 ## Reproduce the Results in Paper
+
+    $ python reproduce.py
