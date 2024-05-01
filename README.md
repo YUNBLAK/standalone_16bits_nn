@@ -36,7 +36,7 @@ Run on example 16-bit ResNet-32:
 
 Below are some examples for commands:
 
-ResNet
+ResNet 32, 56, 110, 156
 
     $ sudo docker run --gpus all -p 3000:3000 nn16 res float16 0.01 256 -rs 777 -rn 32
     $ sudo docker run --gpus all -p 3000:3000 nn16 res float16 0.01 256 -rs 777 -rn 56
@@ -47,20 +47,21 @@ AlexNet
 
     $ sudo docker run --gpus all -p 3000:3000 nn16 alex float16 0.01 256 -rs 777 -rn 0
 
-VGG16
+VGG16, 19
 
-    $ sudo docker run --gpus all -p 3000:3000 nn16 vgg float16 0.01 256 -rs 777 -rn 0
+    $ sudo docker run --gpus all -p 3000:3000 nn16 vgg float16 0.01 256 -rs 777 -rn 16
+    $ sudo docker run --gpus all -p 3000:3000 nn16 vgg float16 0.01 256 -rs 777 -rn 19
 
 MobileNetV2
 
     $ sudo docker run --gpus all -p 3000:3000 nn16 mob float16 0.01 256 -rs 777 -rn 0
 
-DenseNet
+DenseNet 121, 169
 
     $ sudo docker run --gpus all -p 3000:3000 nn16 dense float16 0.01 256 -rs 777 -rn 121
     $ sudo docker run --gpus all -p 3000:3000 nn16 dense float16 0.01 256 -rs 777 -rn 169
 
-Vision Transformer
+Vision Transformer 8, 12, 16
 
     $ sudo docker run --gpus all -p 3000:3000 nn16 vit float16 0.01 256 -rs 777 -rn 8
     $ sudo docker run --gpus all -p 3000:3000 nn16 vit float16 0.01 256 -rs 777 -rn 12
