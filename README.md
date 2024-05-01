@@ -72,7 +72,7 @@ Vision Transformer
     $ python reproduce.py
 
 
-Table 5 in our paper
+Getting the accuracies and training time (Table 5)
 
 | Architectures (# par. million) | FP16 (Accuracy %) | FP32 (Accuracy %) | MP (Accuracy %) | FP16 (Time s) | FP32 (Time s) | MP (Time s) | Acc. Diff. FP16-FP32 | Acc. Diff. FP16-MP | Time Speedup FP32/FP16 | Time Speedup MP/FP16 |
 |--------------------------------|-------------------|-------------------|-----------------|---------------|---------------|-------------|----------------------|--------------------|------------------------|-----------------------|
