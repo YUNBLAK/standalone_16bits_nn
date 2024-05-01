@@ -244,7 +244,8 @@ def NeuralNet(batch_size, epochs, typeFp, arr, modelname, lr, lamb, l2, rseed, r
     }
     
     aq = pd.DataFrame(dict)
-    aq.to_csv("RESULS_RES110_MP.csv", index = False)
+    aq_name = "RESULTS/"+ typeFp + "_" + modelname + "_" + str(batch_size) + "_rand_" + str(rseed)+ "_resNum_" + str(resNum) +"_TIME.csv"
+    aq.to_csv(aq_name, index = False)
     
     tf.keras.backend.clear_session()
 

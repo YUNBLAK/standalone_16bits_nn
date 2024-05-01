@@ -119,6 +119,7 @@ def create_vit_classifier(data_augmentation):
     return model
 
 def run_experiment(model, x_train, y_train, x_test, y_test):
+    global arr1, arr2, arr3
     optimizer = keras.optimizers.SGD(learning_rate=learning_rate)
 
     start = time.time()
@@ -157,6 +158,7 @@ def augment(image, label):
 
 def neuralnet(dfp, act, l, r):
     global activationl
+    global arr1, arr2, arr3
     activationl = act
     
     global transformer_layers
@@ -206,7 +208,17 @@ def neuralnet(dfp, act, l, r):
     }
     
     ndf = pd.DataFrame(dict)
-    name = "RESULTS/" + fp + "_" + str(r) + "_" + str(l) + ".csv"
+    name = "RESULTS/vit_" + fp + "_" + str(r) + "_" + str(l) + ".csv"
+    ndf.to_csv(name, index = False)
+
+
+    dict2 = {
+        "ACC" : arr1,
+        "TIME" : arr3
+    }
+    
+    ndf = pd.DataFrame(dict2)
+    name = "RESULTS/vit_" + fp + "_" + str(r) + "_" + str(l) + "_TIME.csv"
     ndf.to_csv(name, index = False)
     tf.keras.backend.clear_session()
 
@@ -217,3 +229,4 @@ def tester(ffpt, lr, bs, layerNum, random_seed):
     transformer_layers = layerNum
     
     neuralnet(ffpt, "relu", layerNum, random_seed)
+    
